@@ -1,0 +1,11 @@
+//如果不使用json5会很麻烦，不能有注释，且键值对都要用引号包裹
+//mock生成json类型的数据的数据模板，不过我们为了方便以json5的语法写的，获取到后要做相应转化
+{
+  id:'@id()',
+  username:'@cname()',
+  date:'@date()',
+  avatar:"@image('10×10','red','#fff','avatar')",
+  description:'@paragraph()',
+  ip:'@ip()',
+  email:'@email()'
+}

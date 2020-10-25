@@ -32,11 +32,20 @@
 </template>
 
 <script>
+  import axios from 'axios'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+    mounted:function () {
+        axios.get('/user/userInfo').then(res =>{
+            console.log(res)
+        })
+            .catch(err =>{
+                console.log(err);
+            })
+    }
 }
 </script>
 
